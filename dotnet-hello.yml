@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://192.168.1.135:31112
+
+functions:
+  dotnet-hello:
+    lang: csharp
+    handler: ./dotnet-hello
+    image: amogram/dotnet-hello
